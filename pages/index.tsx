@@ -8,6 +8,9 @@ type Post = {
   title: string;
   except: string;
   node: any;
+  categories: any;
+  slug: any;
+
 }
 
 type Posts = {
@@ -20,7 +23,7 @@ type Posts = {
 // ];
 
 // export default function Home({ posts }) {
-const Home: React.FC<Posts> = ({ posts }) =>{
+const Home: React.FC<Posts> = ({ posts }) => {
   return (  
     <div className="container mx-auto px-10 mb-8 bg-white-10">
       <Head>
